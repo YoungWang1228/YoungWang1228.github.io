@@ -34,7 +34,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 className: 'auth-username',
                 position: 'right',
                 onClick: function(e) {
-                    window.open("http://127.0.0.1:38000/oauth/render/gitee", "_blank" )
+                    window.open("http://127.0.0.1:38000/oauth/render/github?redirect="+encodeURIComponent(window.location.href), "_blank" )
                 }
             });
         }
