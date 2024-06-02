@@ -1,8 +1,10 @@
 .book-body>.book-header>.auth-username {
     color: #888;
+    text-transform: none;
 }
 .book-body>.book-header>.auth-username>a {
     color: #888;
+    text-transform: none;
 }
 .book-body>.book-header>.auth-username>a:hover {
     color: #444;
@@ -27,8 +29,6 @@
 ._my_dialog>.dialog_content {
     position: absolute;
     top: 10%;
-    width: 800px;
-    height: 20%;
     left: 0;
     right: 0;
     margin:auto;
@@ -39,7 +39,7 @@
 }
 
 ._my_dialog>.dialog_content>.dialog_token{
-    font-size: xx-large;
+    font-size: x-large;
     margin-top: 30px;
 }
 
@@ -55,5 +55,25 @@
 ._my_dialog>.dialog_content>.dialog_close_div{
     width: 100px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+#fast_login_dialog .dialog_title{
+    font-size: 18px;
+    margin: 0 0 40px 0;
+}
+
+#fast_login_dialog .car{
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+}
+
+#fast_login_dialog .car:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#fast_login_dialog .car>.card-body{
+    font-size: 30px;
+    padding: 5px 0;
 }
