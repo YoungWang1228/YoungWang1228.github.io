@@ -9,44 +9,6 @@
         {% if reversed_posts %}
             <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
         {% endif %}
-        <script>
-            var arr = window.location.href.split("?");
-            if(arr.length > 1){
-                var search = arr[1]
-
-                const params = new URLSearchParams(search)
-                if(params.has('token')){
-                    const token = params.get('token')
-                    if(token){
-                        var decoded = window.atob(token);
-                        var json = checkIsJSON(decoded)
-                        if(json && json.t && json.u){
-                            localStorage.setItem('token', JSON.stringify({t: json.t, u: json.u}))
-                            location.href = arr[0]
-                        }
-                    }
-                }
-            }
-
-            
-
-            function checkIsJSON(str) {
-                if (typeof str == 'string') {
-                    try {
-                        var obj = JSON.parse(str);
-                        if (typeof obj == 'object' && obj) {
-                            return obj;
-                        } else {
-                            return false;
-                        }
-                    } catch (e) {
-                        return false;
-                    }
-                }
-                return false;
-            }
-
-        </script>
     </head>
     <body>
         <div class="book">
@@ -91,31 +53,5 @@
         </div>
 
         {%- include footer.html -%}
-
-        <div id="fast_login_dialog" class="_my_dialog">
-            <div class="black_overlay"></div>
-            <div class="dialog_content" style="width: 400px;">
-                <div class="dialog_title">快速登录</div>
-                <div class="car" style="border-bottom: none;" data-type="gitee">
-                    <div class="card-body" style="font-size: 30px;">
-                        <img src="{{site.baseurl}}/assets/gitbook/gitbook-plugin-auth/img/gitee.png" alt="" style="width: 60px;position: relative;top: -2px;vertical-align: middle;">
-                        <span style="vertical-align: middle; margin: 0 10px;">Gitee</span>
-                    </div>
-                </div>
-                <div class="car" data-type="github">
-                    <div class="card-body" style="font-size: 30px;">
-                        <img src="{{site.baseurl}}/assets/gitbook/gitbook-plugin-auth/img/github.png" alt="" style="width: 60px;position: relative;top: -2px;vertical-align: middle;">
-                        <span style="vertical-align: middle; margin: 0 10px;">Github</span>
-                    </div>
-                </div>
-                <br/><br/>
-                <div style="text-align: center;color: #888;font-size: 15px;">
-                    <span>三方登录采用 <a href="https://www.justauth.cn">JustAuth</a> 开源项目</span>
-                </div>
-                <div class="dialog_close_div">
-                    <button class="button size-1  dialog_close_btn">关闭</button>
-                </div>
-            </div>
-        </div>
     </body>
 </html>

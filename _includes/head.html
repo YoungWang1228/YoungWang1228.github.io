@@ -71,3 +71,42 @@
     {%- endif -%}
 
 {%- endif -%}
+
+<script>
+    var arr = window.location.href.split("?");
+    if(arr.length > 1){
+        var search = arr[1]
+
+        const params = new URLSearchParams(search)
+        if(params.has('token')){
+            const token = params.get('token')
+            if(token){
+                var decoded = window.atob(token);
+                var json = checkIsJSON(decoded)
+                if(json && json.t && json.u){
+                    localStorage.setItem('token', JSON.stringify({t: json.t, u: json.u}))
+                    location.href = arr[0]
+                }
+            }
+        }
+    }
+
+    
+
+    function checkIsJSON(str) {
+        if (typeof str == 'string') {
+            try {
+                var obj = JSON.parse(str);
+                if (typeof obj == 'object' && obj) {
+                    return obj;
+                } else {
+                    return false;
+                }
+            } catch (e) {
+                return false;
+            }
+        }
+        return false;
+    }
+
+</script>

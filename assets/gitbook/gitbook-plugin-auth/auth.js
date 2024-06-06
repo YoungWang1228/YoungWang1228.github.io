@@ -1,17 +1,6 @@
 require(['gitbook', 'jquery'], function(gitbook, $) {
     
     gitbook.events.bind('start', function(e, config) {
-        var $loginDialog = $("#fast_login_dialog")
-        $loginDialog.find(".dialog_close_btn").click(function(){
-            $loginDialog.hide();
-        })
-
-        $loginDialog.find(".car").click(function(){
-            var loginType = $(this).data("type")
-            window.open("https://api.youngwang1228.com:48000/oauth/render/"+loginType+"?redirect="+encodeURIComponent(window.location.href), "_blank" )
-            $loginDialog.hide();
-        })
-
         var token = window.localStorage.getItem("token")
         try{
             token = token ? JSON.parse(token) : null
@@ -60,12 +49,33 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 ]
             });
         }else{
+            var $loginDialog = $("#fast_login_dialog")
+            $loginDialog.find(".dialog_close_btn").click(function(){
+                $loginDialog.hide();
+            })
+    
+            $loginDialog.find(".car").click(function(){
+                var loginType = $(this).data("type")
+                window.open("https://api.youngwang1228.com:48000/oauth/render/"+loginType+"?redirect="+encodeURIComponent(window.location.href), "_blank" )
+                $loginDialog.hide();
+            })
+
             gitbook.toolbar.createButton({
                 text: '未登录',
                 className: 'auth-username',
                 position: 'right',
                 onClick: function(e) {
-                    $loginDialog.show();
+                    var token = window.localStorage.getItem("token")
+                    try{
+                        token = token ? JSON.parse(token) : null
+                    }catch(e){
+                        token = null
+                    }
+                    if(token && token.t && token.u){
+                        location.reload();
+                    }else{
+                        $loginDialog.show();
+                    }
                 }
             });
         }
