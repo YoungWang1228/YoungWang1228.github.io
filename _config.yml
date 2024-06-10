@@ -1,15 +1,15 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            王阳的免费API
+longtitle:        王阳的免费API 永久免费 实用API 
+author:           王阳
+email:            youngwang1228@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  王阳的免费API 永久免费 实用API 节假日API 手机号码属地查询 IP属地查询 OCR 语音识别 语音转文字 二维码生成
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
+url:              'https://youngwang1228.github.io'
 baseurl:          ''
 rss:              RSS
 
@@ -41,7 +41,8 @@ syntax_highlighter_style: colorful
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-permalink:                /:categories/:year-:month-:day-:title:output_ext
+#permalink:                /:categories/:year-:month-:day-:title:output_ext
+permalink:                /:categories/:title:output_ext
 
 # Disqus comments
 # disqushandler:            sighingnow
@@ -49,10 +50,10 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 exclude:
   - _drafts
 
-collections:
-  pages:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   pages:
+#     output: true
+#     permalink: /:collection/:path/
 
 page_width: 800px
 
