@@ -6,20 +6,25 @@ permalink: /
 
 {%- include md/about.md -%}
 
-### 使用说明
-{%- include md/authorization.md -%}
 
 
 ### API列表
 
 <div class="table-wrapper" markdown="block">
 
+{% assign reversed_posts = site.posts | reverse %}
+
 API        |说明   
 :-         |:-
-[ip]({% post_url 2024-06-11-ip %})         |获取IP地址和归属地
+{% for post in reversed_posts %}[{{ post.title}}]({{post.url}})     | {{ post.description}}
+{% endfor %}
 
 </div>
 持续更新中...   
+
+### 使用说明
+{%- include md/authorization.md -%}
+
 
 ### 鼓励一下
 {%- include md/support.md -%}
