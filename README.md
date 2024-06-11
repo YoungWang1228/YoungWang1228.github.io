@@ -4,8 +4,7 @@ title: 王阳的免费API
 permalink: /
 ---
 
-{%- include md/notice.md -%}
-
+{%- include md/about.md -%}
 
 ### 使用说明
 {%- include md/authorization.md -%}
