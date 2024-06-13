@@ -31,7 +31,8 @@ permalink: /
 API        |说明   
 :-         |:-
 [IP查询](/api/ip.html)         |获取您的IP地址和归属地
-[IP归属地查询](/api/ip2region.html)         |根据IP查询归属地
+[IP归属地查询](/api/ip2region.html)         |IP归属地查询
+[节假日查询](/api/holiday.html)         |节假日查询
 
 </div>
 持续更新中...   
