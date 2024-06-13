@@ -30,8 +30,8 @@ permalink: /
 
 API        |说明   
 :-         |:-
-[IP查询]({% post_url 2024-06-11-ip %})         |获取您的IP地址和归属地
-[IP归属地查询]({% post_url 2024-06-11-ip2region %})         |根据IP查询归属地
+[IP查询](/api/ip.html)         |获取您的IP地址和归属地
+[IP归属地查询](/api/ip2region.html)         |根据IP查询归属地
 
 </div>
 持续更新中...   
