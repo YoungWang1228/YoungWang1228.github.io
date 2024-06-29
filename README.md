@@ -10,7 +10,7 @@ permalink: /
 
 ### API文档
 * [王阳的免费API-Github](https://youngwang1228.github.io/)
-* [王阳的免费API-Gitee](https://youngwang1228.gitee.io/)
+<!-- * [王阳的免费API-Gitee](https://youngwang1228.gitee.io/) -->
 
 ### 注意事项
 1. 由于带宽和计算资源有限，每个API都将会限制调用频率，具体限制视计算复杂度而定，一般都可以满足正常使用
@@ -36,7 +36,9 @@ API        |说明
 [二维码生成](/api/qrcode.html)          |二维码生成
 [条形码生成](/api/barcode.html)         |条形码生成
 [二维码解码](/api/qrdecode.html)        |二维码解码
+
 </div>
+
 持续更新中...   
 
 ### 使用说明
