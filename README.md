@@ -30,12 +30,12 @@ permalink: /
 
 API        |说明   
 :-         |:-
-[IP查询](/api/ip.html)                 |获取您的IP地址和归属地
-[IP归属地查询](/api/ip2region.html)     |IP归属地查询
-[节假日查询](/api/holiday.html)         |节假日查询
-[二维码生成](/api/qrcode.html)          |二维码生成
-[条形码生成](/api/barcode.html)         |条形码生成
-[二维码解码](/api/qrdecode.html)        |二维码解码
+[IP查询](https://youngwang1228.github.io/api/ip.html)                 |获取您的IP地址和归属地
+[IP归属地查询](https://youngwang1228.github.io/api/ip2region.html)     |IP归属地查询
+[节假日查询](https://youngwang1228.github.io/api/holiday.html)         |节假日查询
+[二维码生成](https://youngwang1228.github.io/api/qrcode.html)          |二维码生成
+[条形码生成](https://youngwang1228.github.io/api/barcode.html)         |条形码生成
+[二维码解码](https://youngwang1228.github.io/api/qrdecode.html)        |二维码解码
 
 </div>
 
