@@ -36,6 +36,7 @@ API        |说明
 [二维码生成](https://youngwang1228.github.io/api/qrcode.html)          |二维码生成
 [条形码生成](https://youngwang1228.github.io/api/barcode.html)         |条形码生成
 [二维码解码](https://youngwang1228.github.io/api/qrdecode.html)        |二维码解码
+[身份证查询](https://youngwang1228.github.io/api/idcard.html)        |身份证查询
 
 </div>
 
