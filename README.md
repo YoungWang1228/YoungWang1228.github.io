@@ -38,6 +38,7 @@ API        |说明
 [二维码解码](https://youngwang1228.github.io/api/qrdecode.html)        |二维码解码
 [身份证查询](https://youngwang1228.github.io/api/idcard.html)        |身份证查询
 [手机号归属地查询](https://youngwang1228.github.io/api/phone-geo.html)        |手机号归属地查询
+[短网址还原](https://youngwang1228.github.io/api/short.html)        |短网址还原
 
 </div>
 
